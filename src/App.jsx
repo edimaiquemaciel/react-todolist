@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { BsTrash, BsBookmarkCheck, BsBookmarkCheckFill } from "react-icons/bs";
 import "./App.css";
 
-const API = "https://teste-api-json-server.vercel.app";
+const API = "https://server-listdo.onrender.com";
 
 function App() {
   const [title, setTitle] = useState("");
