@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { BsTrash, BsBookmarkCheck, BsBookmarkCheckFill } from "react-icons/bs";
+import Spinner from "./assets/tube-spinner.svg"
 import "./App.css";
 
 const API = "https://server-listdo.onrender.com";
@@ -88,7 +89,11 @@ function App() {
   }
 
   if(loading){
-    return <p>Carregando...</p>
+    return (
+      <div className="loading">
+        <img src={Spinner} alt="spinner" />
+      </div>
+    )
   }
   return (
     <div className="App">

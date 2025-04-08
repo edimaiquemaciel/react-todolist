@@ -103,3 +103,14 @@ input[type="submit"] {
 .todo svg:hover {
     color: rgb(240, 98, 146);
 }
+
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+}
+
+.loading img {
+    width: 100px;
+}
